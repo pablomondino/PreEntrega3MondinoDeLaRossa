@@ -9,7 +9,7 @@
 
 /****************  variables *******************/
 /***************** componente-boton ********/
-.boton {
+.boton, .boton-contacto {
   background-color: rgb(31, 72, 239);
   color: white;
   font-size: 15px;
@@ -18,8 +18,14 @@
   border: solid rgb(3, 3, 60) 2px;
   box-shadow: 50px 3px 57px 18px rgba(0, 0, 0, 0.65);
 }
-.boton:hover {
+.boton:hover, .boton-contacto:hover {
   background-color: green;
+}
+
+.boton-contacto {
+  font-size: 20px;
+  padding: 15px;
+  box-shadow: 0;
 }
 
 a {
@@ -222,9 +228,10 @@ footer h2 {
 
 /* section Estilos para la página tarifa*/
 .section1--tarifa {
-  background-color: #6d8ea0;
+  background-color: lightblue;
   padding-bottom: 20px;
   flex-direction: column;
+  width: 100%;
 }
 .section1--tarifa h2 {
   padding-top: 30px;
@@ -239,11 +246,6 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.section1--tarifa {
-  width: 100%;
-  background-color: #6d8ea0;
 }
 
 .section2--tarifa {

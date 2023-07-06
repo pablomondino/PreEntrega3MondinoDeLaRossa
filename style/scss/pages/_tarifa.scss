@@ -1,7 +1,10 @@
 .section1--tarifa {
-    background-color: $color_secundario;
+    
+    background-color: $color_principal;
     padding-bottom: 20px;
     flex-direction: column;
+    width: 100%;
+   
 
     h2 {
         padding-top: 30px;
@@ -20,10 +23,7 @@ table {
     align-items: center;
 }
 
-.section1--tarifa {
-    width: 100%;
-    background-color: $color_secundario ;
-}
+
 
 .section2--tarifa {
     width: 100%;
