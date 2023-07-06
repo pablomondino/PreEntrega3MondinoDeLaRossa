@@ -6,6 +6,12 @@
 
 @import "../scss/abstracts/variables";
 
+/****************  elementos *******************/
+@import "../scss/components.scss/elements";
+
+/****************  mixins*******************/
+@import "../scss/abstracts/mixins";
+
 /***************** componente-boton ********/
 
 @import "../scss/components.scss/button";

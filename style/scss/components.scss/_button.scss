@@ -1,5 +1,5 @@
 
-.boton-base{
+%boton-base{
     background-color: rgb(31, 72, 239);
     color: white;
     box-shadow: 50px 3px 57px 18px rgba(0, 0, 0, 0.65);
@@ -9,7 +9,7 @@
 
 
 .boton {
-    @extend boton-base;
+    @extend %boton-base;
     font-size: 15px;
     padding: 8px;
     
@@ -25,7 +25,7 @@
 
 
 .boton-contacto {
-    @extend .boton-base;
+    @extend %boton-base;
     font-size: 20px;
     padding: 15px;
   

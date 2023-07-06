@@ -8,24 +8,38 @@
 }
 
 /****************  variables *******************/
+/****************  elementos *******************/
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+/****************  mixins*******************/
 /***************** componente-boton ********/
-.boton, .boton-contacto {
+.boton-contacto, .boton {
   background-color: rgb(31, 72, 239);
   color: white;
-  font-size: 15px;
-  padding: 8px;
+  box-shadow: 50px 3px 57px 18px rgba(0, 0, 0, 0.65);
   border-radius: 10px;
   border: solid rgb(3, 3, 60) 2px;
-  box-shadow: 50px 3px 57px 18px rgba(0, 0, 0, 0.65);
 }
-.boton:hover, .boton-contacto:hover {
+
+.boton {
+  font-size: 15px;
+  padding: 8px;
+}
+.boton:hover {
   background-color: green;
 }
 
 .boton-contacto {
   font-size: 20px;
   padding: 15px;
-  box-shadow: 0;
 }
 
 a {
@@ -49,21 +63,22 @@ body {
   grid-template-rows: auto auto auto auto;
   font-family: Arial, Helvetica, sans-serif;
   /*min-height: 100vh;*/
-} /*******************  nav   **********************/
+}
+
+/*******************  nav   **********************/
 /* grid area -------->>>nav   */
 nav {
+  display: flex;
+  flex-direction: columns;
   grid-area: nav;
   background-color: black;
   height: 100%;
   color: white;
-  display: flex;
-  flex-direction: column;
   position: fixed;
   left: 0;
 }
 nav ul li {
   padding: 20px;
-  /*elimine para ver como queda*/
   margin-top: 30px;
 }
 
@@ -71,9 +86,10 @@ nav ul li {
 /* grid area -------->>>header  */
 header {
   grid-area: header;
+  display: flex;
+  flex-direction: row;
   background-color: #016fb9;
   width: 100%;
-  display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -85,9 +101,9 @@ header .titulo {
 /*grid area------>>>>footer*/
 footer {
   grid-area: footer;
-  background-color: #6d8ea0;
   display: flex;
   flex-direction: column;
+  background-color: #6d8ea0;
   padding-top: 10px;
   padding-bottom: 10px;
   justify-content: center;
@@ -139,7 +155,7 @@ footer h2 {
 }
 .engloba-comunicate-seguinos .footer-comunicate .nav-engloba-comunicate .ws-y-google li .google {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
@@ -171,10 +187,10 @@ footer h2 {
 /*grid area ----->>>>section1*/
 .section1 {
   grid-area: section1;
-  padding: 30px;
-  background-color: white;
   display: flex;
   flex-direction: column;
+  padding: 30px;
+  background-color: white;
   align-items: center;
   justify-content: center;
 }
@@ -196,10 +212,10 @@ footer h2 {
 /*grid area ----->>>>section2*/
 .section2 {
   grid-area: section2;
-  padding: 40px;
-  background-color: lightblue;
   display: flex;
   flex-direction: row;
+  padding: 40px;
+  background-color: lightblue;
   flex-wrap: wrap;
   align-content: center;
   justify-items: center;

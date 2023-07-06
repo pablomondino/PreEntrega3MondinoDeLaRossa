@@ -1,18 +1,20 @@
 nav {
+    @include flex(columns);
+
     grid-area: nav;
     background-color: black;
     height: 100%;
     color: white;
-    display: flex;
-    flex-direction: column;
+
     position: fixed;
     left: 0;
 
     ul {
         li {
             padding: 20px;
-            /*elimine para ver como queda*/
             margin-top: 30px;
         }
     }
-};
+}
+
+;
