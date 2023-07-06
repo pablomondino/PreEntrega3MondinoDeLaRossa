@@ -30,7 +30,6 @@ body {
   border: solid rgb(3, 3, 60) 2px;
   box-shadow: 50px 3px 57px 18px rgba(0, 0, 0, 0.65);
 }
-
 .boton:hover {
   background-color: green;
 }
@@ -52,17 +51,14 @@ nav {
   background-color: black;
   height: 100%;
   color: white;
-}
-
-nav {
   display: flex;
   flex-direction: column;
   position: fixed;
   left: 0;
 }
-
 nav ul li {
-  padding: 20px; /*elimine para ver como queda*/
+  padding: 20px;
+  /*elimine para ver como queda*/
   margin-top: 30px;
 }
 
@@ -97,7 +93,6 @@ footer {
   width: 100%;
   width: auto;
 }
-
 footer h2 {
   color: white;
 }
@@ -108,11 +103,8 @@ footer h2 {
   justify-content: space-between;
   align-items: center;
   height: 300px;
-  position: relative;
-  right: 50px;
 }
-
-.footer-comunicate {
+.engloba-comunicate-seguinos .footer-comunicate {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,35 +112,30 @@ footer h2 {
   background-color: #6d8ea0;
   height: auto;
 }
-
-.nav-engloba-comunicate {
+.engloba-comunicate-seguinos .footer-comunicate .nav-engloba-comunicate {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   width: 100%;
 }
-
-.ws-y-google {
+.engloba-comunicate-seguinos .footer-comunicate .nav-engloba-comunicate .ws-y-google {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-
-.ws-y-google li {
+.engloba-comunicate-seguinos .footer-comunicate .nav-engloba-comunicate .ws-y-google li {
   padding: 20px;
   list-style: none;
 }
-
-.ws {
+.engloba-comunicate-seguinos .footer-comunicate .nav-engloba-comunicate .ws-y-google li .ws {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
-.google {
+.engloba-comunicate-seguinos .footer-comunicate .nav-engloba-comunicate .ws-y-google li .google {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,19 +151,16 @@ footer h2 {
   position: relative;
   left: 30px;
 }
-
-.nav-engloba-seguinos {
+.footer-seguinos .nav-engloba-seguinos {
   display: flex;
   flex-direction: row;
 }
-
-.face-inst-twitt {
+.footer-seguinos .nav-engloba-seguinos .face-inst-twitt {
   display: flex;
   flex-direction: row;
   width: auto;
 }
-
-.face-inst-twitt li {
+.footer-seguinos .nav-engloba-seguinos .face-inst-twitt li {
   padding: 30px;
   list-style: none;
 }
@@ -194,14 +178,12 @@ footer h2 {
   align-items: center;
   justify-content: center;
 }
-
 .section1 h1 {
   font-size: xx-large;
   padding-top: 10px;
   padding-bottom: 30px;
   background-color: #6d8ea0;
 }
-
 .section1 p {
   padding: 20px 80px;
   text-align: center;
@@ -233,7 +215,6 @@ footer h2 {
   padding: 10px;
   width: 40%;
 }
-
 .depto__imagen {
   border: darkblue solid 2px;
 }
@@ -255,7 +236,6 @@ footer h2 {
   padding-bottom: 20px;
   flex-direction: column;
 }
-
 .section1--tarifa h2 {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -280,9 +260,6 @@ table {
 .section2--tarifa {
   width: 100%;
   background-color: white;
-}
-
-.section2--tarifa {
   flex-direction: column;
   align-content: center;
 }
@@ -295,10 +272,8 @@ table {
   width: 85%;
   padding: 50px;
   background-color: #6d8ea0;
-  /*background-color: yellow;*/
 }
-
-#preguntas-frecuentes-preguntas div {
+.preguntas-frecuentes div {
   margin-top: 20px;
 }
 
@@ -308,8 +283,7 @@ table {
 .section2--contacto {
   flex-direction: column;
 }
-
-#contacto {
+.section2--contacto #contacto {
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: #6d8ea0;
@@ -325,7 +299,6 @@ form {
   position: relative;
   top: 25px;
 }
-
 #info-pedido div {
   margin: 25px;
 }
