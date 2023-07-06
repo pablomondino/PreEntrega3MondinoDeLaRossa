@@ -1,0 +1,540 @@
+/****************  selector universal  ***********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: solid 2px black;*/
+}
+
+/***************** estilos globales ********/
+.grid-template {
+    grid-template-areas:
+        "nav    header"
+        "nav    section1"
+        "nav    section2"
+        "nav    footer";
+}
+//hasta aca1
+
+body {
+    display: grid;
+   
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    /*min-height: 100vh;*/
+}
+
+
+
+/*boton*/
+.boton {
+    background-color: rgb(31, 72, 239);
+    color: white;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    border: solid rgb(3, 3, 60) 2px;
+    box-shadow: 50px 3px 57px 18px rgba(0, 0, 0, 0.65);
+
+
+
+
+}
+
+
+.boton:hover{
+
+    background-color: green;
+}
+
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+//hasta aca 2
+
+
+/*******************  nav   **********************/
+
+/* grid area -------->>>nav   */
+nav {
+    grid-area: nav;
+    background-color: black;
+    height: 100%;
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+}
+
+nav ul li {
+    padding: 20px; /*elimine para ver como queda*/
+    margin-top: 30px;
+}
+
+/*hasta aca3*/
+/*******************  header   **********************/
+
+
+/* grid area -------->>>header   */
+
+header {
+    grid-area: header;
+    background-color: #016fb9;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.titulo{
+    text-align: center;
+}
+
+
+/*hasta aca 4*/
+
+
+/********************     footer    *************/
+
+/*grid area------>>>>footer*/
+
+
+footer {
+    grid-area: footer;
+    background-color: #6d8ea0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    width: auto;
+}
+
+footer h2 {
+    color: white;
+}
+
+.engloba-comunicate-seguinos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    position: relative;
+    right: 50px;
+}
+
+
+
+.footer-comunicate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #6d8ea0;
+    height: auto;
+    }
+
+.nav-engloba-comunicate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.ws-y-google {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ws-y-google li {
+    padding: 20px;
+    list-style: none;
+}
+
+.ws {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.google {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.footer-seguinos {
+    display: flex;
+    flex-direction: column;
+    background-color: #6d8ea0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 30px;
+}
+
+.nav-engloba-seguinos {
+    display: flex;
+    flex-direction: row;
+}
+
+.face-inst-twitt {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+.face-inst-twitt li {
+    padding: 30px;
+    list-style: none;
+}
+
+/*hasta aca 5*/
+
+
+/********************** Estilos index.html **********************/
+
+/*estilos generales a todas paginas*/ 
+
+/*grid area*/
+.section1 {
+    grid-area: section1;
+    
+    padding: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 h1 {
+    font-size: xx-large;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: #6d8ea0;
+}
+
+.section1 p {
+    padding: 20px 80px;
+    text-align: center;
+    margin-top: 30px;
+    max-width: 70%;
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+/*hasta aca 6*/
+
+/* index*/
+
+/* section2 */
+
+/*grid area*/
+.section2 {
+    grid-area: section2;
+    
+    padding: 40px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-items: center;
+    justify-content: flex-end;
+       width: 100%;
+   
+}
+
+
+.depto {
+    margin: 10px;
+    
+    padding: 10px;
+    width: 40%;
+   
+}
+
+.depto__imagen {
+    border: darkblue solid 2px;
+   
+}
+
+/*hasta aca 7*/
+
+/* Estilos para la página sobrenosotros.html **********************/
+
+.section1--sobreNosotros {
+    text-align: center;
+    background-color: white;
+}
+
+
+
+/* seccion sobrenosotros*/
+.section1 p {
+    padding: 10px ;
+}
+    
+.section1--tarifa  {
+    background-color: #6d8ea0;
+    padding-bottom: 20px;
+    flex-direction: column;
+}
+
+.section1--tarifa h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+table {
+    border: solid 2px black;
+}
+
+/* Estilos para la página sobrenosotros.html **********************/
+
+.section1-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section1--tarifa {
+    width: 100%;
+    background-color: lightblue;
+}
+
+.section2--tarifa {
+    width: 100%;
+   background-color:white;
+
+}
+.section2--tarifa{
+    flex-direction: column;
+    align-content: center;
+}
+
+/*hasta aca 8*/
+/* Estilos para la página faq   ********************/
+
+
+
+
+
+.preguntas-frecuentes {
+    display: flex;
+    flex-direction: column;
+ 
+     width: 85%;
+     padding: 50px;
+     background-color: #6d8ea0;
+     /*background-color: yellow;*/
+ }
+ 
+ #preguntas-frecuentes-preguntas div {
+     margin-top: 20px;
+ }
+ 
+ 
+ /*hasta aca* 9 */
+ 
+
+/**********************   contacto    *****************/
+
+
+/****      seccion contacto   *****/
+
+.section2--contacto{
+    flex-direction: column;
+}
+
+#contacto {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #6d8ea0;
+    text-align: center;
+}
+
+form {
+    padding: 30px;
+    text-align: center;
+}
+
+#info-pedido {
+    position: relative;
+    top: 25px;
+}
+
+#info-pedido div {
+    margin: 25px;
+}
+
+/*hasta aca 10 */
+
+
+/********************
+medias queris
+**********************/
+
+
+/* media query para tablets
+estos estilos se aplican para resoluciones menores a 1024*/
+
+@media (max-width:1024px) {
+
+
+    body {
+
+        /* display: grid;*/
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        /* yo puse en tercer columna auto y anda bien*/
+
+        /*esto saco porque puse en una clase
+        grid-template-areas:
+            "header"
+            "nav"
+            "section1"
+            "section2"
+            "footer";
+        font-family: Arial, Helvetica, sans-serif;
+         */
+
+    }
+
+    .grid-template {
+        grid-template-areas:
+            "header"
+            "nav"
+            "section1"
+            "section2"
+            "footer";
+    }
+
+    nav {
+        /*flex-direction: row;*/
+
+
+        position: static;
+        height: auto;
+
+    }
+    .section2{
+        justify-content: space-between;
+    }
+
+    .barra-paginas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
+
+/*hasta aca 11*/
+
+
+/* media query para mobile
+estos estilos se aplican para resoluciones menores a 586*/
+
+
+@media (max-width:586px) {
+    body {
+        /* display: grid;*/
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        /* yo puse en tercer columna auto y anda bien*/
+        /*grid-template-areas:
+            "header"
+            "nav"
+            "section1"
+            "section2"
+            "footer";
+            */
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .grid-template {
+        grid-template-areas:
+            "header"
+            "nav"
+            "section1"
+            "section2"
+            "footer";
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .section1 img {
+        height: 200px;
+        width: 300px;
+    }
+
+
+    .section2 {
+        flex-direction: column;
+    }
+
+    .depto {
+        margin: 20px;
+        width: 100%;
+        position: relative;
+        left: 0;
+
+    }
+
+    footer {
+        justify-content: space-around;
+        height: 700px;
+
+    }
+    
+    footer span {
+        padding: 20px;
+        text-align: center;
+      
+    }
+
+    .engloba-comunicate-seguinos {
+        flex-direction: column;
+
+    }
+
+    nav .barra-paginas {
+        flex-direction: column;
+        font-size: large;
+        align-items: center;
+        align-content: center;
+    }
+
+    nav .barra-pagina ul li {
+        text-decoration: none;
+        list-style: none;
+    }
+}
+
+/*hasta aca 12  fin*/
