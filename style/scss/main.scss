@@ -1,49 +1,19 @@
 /****************  selector universal  ***********/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /*border: solid 2px black;*/
-}
 
-/***************** estilos globales ********/
-.grid-template {
-    grid-template-areas:
-        "nav    header"
-        "nav    section1"
-        "nav    section2"
-        "nav    footer";
-}
+@import "../scss/base/reset";
 
-//hasta aca1
+/***************** variables ********/
 
-body {
-    display: grid;
+@import "../scss/abstracts/variables";
 
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto;
+/***************** grid - body ********/
 
-    font-family: Arial, Helvetica, sans-serif;
-    /*min-height: 100vh;*/
-}
+@import "../scss/layout/grid";
 
+/***************** componente-boton ********/
 
+@import "../scss/components.scss/button";
 
-/*boton*/
-.boton {
-    background-color: rgb(31, 72, 239);
-    color: white;
-    font-size: 15px;
-    padding: 8px;
-    border-radius: 10px;
-    border: solid rgb(3, 3, 60) 2px;
-    box-shadow: 50px 3px 57px 18px rgba(0, 0, 0, 0.65);
-
-    &:hover {
-        background-color: green;
-    }
-
-}
 
 
 
@@ -63,24 +33,8 @@ li {
 /*******************  nav   **********************/
 
 /* grid area -------->>>nav   */
-nav {
-    grid-area: nav;
-    background-color: black;
-    height: 100%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    left: 0;
 
-    ul {
-        li {
-            padding: 20px;
-            /*elimine para ver como queda*/
-            margin-top: 30px;
-        }
-    }
-}
+@import "../scss/layout/nav";
 
 
 
@@ -93,7 +47,7 @@ nav {
 header {
     grid-area: header;
 
-    background-color: #016fb9;
+    background-color: $color_header;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -115,7 +69,7 @@ header {
 
 footer {
     grid-area: footer;
-    background-color: #6d8ea0;
+    background-color: $color_secundario;
     display: flex;
     flex-direction: column;
     padding-top: 10px;
@@ -145,7 +99,7 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #6d8ea0;
+        background-color: $color_secundario;
         height: auto;
 
         .nav-engloba-comunicate {
@@ -188,7 +142,7 @@ footer {
 .footer-seguinos {
     display: flex;
     flex-direction: column;
-    background-color: #6d8ea0;
+    background-color: $color_secundario;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -234,7 +188,7 @@ footer {
         font-size: xx-large;
         padding-top: 10px;
         padding-bottom: 30px;
-        background-color: #6d8ea0;
+        background-color: $color_secundario;
     }
     p {
         padding: 20px 80px;
@@ -260,7 +214,7 @@ footer {
     grid-area: section2;
 
     padding: 40px;
-    background-color: lightblue;
+    background-color: $color_principal;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -304,7 +258,7 @@ footer {
 }
 
 .section1--tarifa {
-    background-color: #6d8ea0;
+    background-color: $color_secundario;
     padding-bottom: 20px;
     flex-direction: column;
     h2 {
@@ -327,7 +281,7 @@ table {
 
 .section1--tarifa {
     width: 100%;
-    background-color: lightblue;
+    background-color:$color_secundario ;
 }
 
 .section2--tarifa {
@@ -351,7 +305,7 @@ table {
 
     width: 85%;
     padding: 50px;
-    background-color: #6d8ea0;
+    background-color: $color_secundario;
     div {
         margin-top: 20px;
     }
@@ -374,7 +328,7 @@ table {
     #contacto {
         padding-top: 25px;
         padding-bottom: 25px;
-        background-color: #6d8ea0;
+        background-color: $color_secundario;
         text-align: center;
     }
     

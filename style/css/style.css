@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/****************  selector universal  ***********/
+/****************  selector universal  ***********/ /****************  selector universal  ***********/
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +7,8 @@
   /*border: solid 2px black;*/
 }
 
-/***************** estilos globales ********/
+/***************** variables ********/
+/***************** grid - body ********/
 .grid-template {
   grid-template-areas: "nav    header" "nav    section1" "nav    section2" "nav    footer";
 }
@@ -20,7 +21,7 @@ body {
   /*min-height: 100vh;*/
 }
 
-/*boton*/
+/***************** componente-boton ********/
 .boton {
   background-color: rgb(31, 72, 239);
   color: white;
@@ -254,7 +255,7 @@ table {
 
 .section1--tarifa {
   width: 100%;
-  background-color: lightblue;
+  background-color: #6d8ea0;
 }
 
 .section2--tarifa {
