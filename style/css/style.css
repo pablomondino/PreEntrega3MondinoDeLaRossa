@@ -19,6 +19,28 @@ li {
   list-style: none;
 }
 
+/*
+.depto__imagen{
+    transform: rotate(36deg);
+    &:hover{
+      border:  solid red  ;
+    }
+  }
+
+
+ */ /*
+// border: solid 3px blue;
+   // transform: rotate(30deg);
+   // transition: all 2s;
+
+  */
+.depto__imagen {
+  transition: transform 0.3s;
+}
+.depto__imagen:hover {
+  transform: translateX(10px) translateY(-10px);
+}
+
 /****************  mixins*******************/
 /***************** componente-boton ********/
 .boton-contacto, .boton {
